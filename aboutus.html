@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rueda Fina Sobre Nosotros</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body>
+
+        <!-- ..................Start Navbar................... -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo"><h3>RUEDA FINA</h3></a>
+            <ul class="nav-link">
+                <li><a href="index.html" style="--i:1;" class="active">Inicio</a></li>
+                <li><a href="about.html" style="--i:2;">Sobre nosotros</a></li>
+                <li><a href="contact.html" style="--i:5;">Contactanos</a></li>
+            </ul>
+            <ul class="social-link">
+                <li><a href="#" style="--i:1;"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" style="--i:2;"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" style="--i:3;"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header con el contenido de la sección "Sobre Nostros" -->
+    <header>
+        <div class="container header-container">
+            <div class="header-left">
+                <h1>Conoce Nuestra Historia</h1>
+                <p>En Rueda Fina, creemos que el futuro de la movilidad es eléctrico. Como los distribuidores líderes de autos eléctricos en Costa Rica, estamos comprometidos a ofrecer vehículos innovadores, ecológicos y confiables que permitan a nuestros clientes moverse con estilo y sostenibilidad.</p>
+            </div>
+            <div class="header-right">
+                <div class="sq-box">
+                    <img src="./car.png" alt="Vehículo Eléctrico">
+                </div>
+            </div>
+        </div>
+        <div class="sq-box2"></div>
+    </header>
+
+    <!-- Sección de Misión y Visión -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mission">
+                <h2>Nuestra Misión</h2>
+                <p>Promover un cambio hacia la movilidad eléctrica, proporcionando a nuestros clientes soluciones sostenibles y accesibles, impulsadas por la última tecnología y un compromiso inquebrantable con la calidad.</p>
+            </div>
+            <div class="vision">
+                <h2>Nuestra Visión</h2>
+                <p>Ser reconocidos como la agencia de referencia en vehículos eléctricos en América Latina, liderando el camino hacia un futuro más limpio y eficiente para las próximas generaciones.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Equipo -->
+    <section class="team">
+        <div class="container">
+            <h2>Conoce a Nuestro Equipo</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="./img/team1.jpg" alt="Juan Pérez - Fundador">
+                    <h3>Juan Pérez</h3>
+                    <p>Fundador y CEO</p>
+                    <p>Con más de 20 años de experiencia en el sector automotriz, Juan ha liderado el camino hacia una revolución eléctrica en Costa Rica.</p>
+                </div>
+                <div class="team-member">
+                    <img src="./img/team2.jpg" alt="Ana González - Directora de Operaciones">
+                    <h3>Ana González</h3>
+                    <p>Directora de Operaciones</p>
+                    <p>Especialista en gestión de equipos, Ana asegura que cada cliente reciba una experiencia excepcional en cada interacción.</p>
+                </div>
+                <div class="team-member">
+                    <img src="./img/team3.jpg" alt="Carlos Morales - Ingeniero Jefe">
+                    <h3>Carlos Morales</h3>
+                    <p>Ingeniero Jefe</p>
+                    <p>Carlos lidera nuestro equipo de técnicos y garantiza que cada vehículo cumpla con los más altos estándares de calidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- patas -->
+    <section class="cta">
+        <div class="container">
+            <h2>Únete a Nuestra Revolución Verde</h2>
+            <p>Forma parte de la comunidad que está cambiando el mundo, un viaje eléctrico a la vez. Visítanos o contáctanos para conocer más sobre cómo podemos ayudarte a hacer el cambio a la movilidad eléctrica.</p>
+            <a href="contact.html" class="btn">Contáctanos</a>
+        </div>
+    </section>
+
+</body>
+
+
+
+<script>
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('nav'); // Selecciona el navbar
+        if (window.scrollY > 0) { // Verifica si se ha desplazado
+            navbar.classList.add('navbar-blur'); // Agrega la clase de desenfoque
+        } else {
+            navbar.classList.remove('navbar-blur'); // Remueve la clase si está en la parte superior
+        }
+    });
+</script>
+
+
+</html>
